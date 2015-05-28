@@ -1,0 +1,37 @@
+{
+  "node": true, // Enable globals available when code is running inside of the NodeJS runtime environment.
+  "browser": true, // Standard browser globals e.g. `window`, `document`.
+  "esnext": true, // Allow ES.next specific features such as `const` and `let`.
+  "bitwise": false, // Prohibit bitwise operators (&, |, ^, etc.).
+  "camelcase": true, // Permit only camelcase for `var` and `object indexes`.
+  "eqeqeq": true, // Require triple equals i.e. `===`.
+  "latedef": true, // Prohibit variable use before definition.
+  "newcap": true, // Require capitalization of all constructor functions e.g. `new F()`.
+  "undef": true, // Require all non-global variables be declared before they are used.
+  "noarg": true, // Prohibit use of `arguments.caller` and `arguments.callee`.
+  "unused": false, // Warn unused variables.
+  "strict": true, // Require `use strict` pragma in every file.
+  "smarttabs": false, // Suppresses warnings about mixed tabs and spaces
+  "noempty": true, // Prohibit use of empty blocks.
+  "indent": 2,
+  "undef": true,
+  "quotmark": "single",
+  "maxlen": 80,
+  "trailing": true, // Prohibit trailing whitespaces.
+  "curly": true,
+  "globals": { // Globals variables.
+  },
+  "predef": [ // Extra globals.
+    "define",
+    "require",
+    "exports",
+    "module",
+    "describe",
+    "before",
+    "beforeEach",
+    "after",
+    "afterEach",
+    "it",
+    "inject"
+   ]
+}
