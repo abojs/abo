@@ -32,6 +32,7 @@
     "after",
     "afterEach",
     "it",
-    "inject"
+    "inject",
+    'expect'
    ]
 }
