@@ -41,4 +41,16 @@ describe('Assign experiment', function() {
     expect(expt.id).toBe('1');
     expect(cookie.get(vkey)).toBe('1');
   });
+
+  it('forces existing experiment and adds it to the cookie', function() {
+    cookie.remove(vkey);
+    var expt = assignExpt({
+      '1': {
+        id: '1',
+        name: 'Foo'
+      }
+    }, {href:'http://domain.com?abo.x=[1]'});
+    expect(expt.id).toBe('1');
+    expect(cookie.get(vkey)).toBe('1');
+  });
 });
