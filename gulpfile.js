@@ -34,5 +34,5 @@ gulp.task('build', function() {
 });
 
 gulp.task('plato', function() {
-  plato.inspect(['./lib/**/*.js'], './plato', {}, function() {});
+  plato.inspect(['./lib/**/*.js'], './build/plato', {}, function() {});
 });

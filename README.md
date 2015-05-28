@@ -1,8 +1,9 @@
 # abo
 
+Abo is a micro front-end A/B testing library.
+
 ``` js
-var abo = new Abo();
-abo.addExpt({
+abo([{
   id: '423',
   name: 'Blue buttons on Homepage',
   /* Assignment Condition */
@@ -11,9 +12,15 @@ abo.addExpt({
   },
   traffic: 0.1, // 10% of the traffic will be assigned to this variation if the Assignemt condition was satisfied
   setup: function() {
-    // make the buttons blue here
+    $('button').css({
+      'background-color': 'blue'
+    });
   }
-});
-
-abo.start();
+}, {
+  id: '132',
+  name: 'New page title',
+  setup: function() {
+    $('title').html('New page title');
+  }
+}]);
 ```
