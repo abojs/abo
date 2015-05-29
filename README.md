@@ -2,6 +2,25 @@
 
 Abo is a micro front-end A/B testing library.
 
+## How it works?
+
+The first time a user visits a page he gets an experiment assigned. The experiment's ID is stored in the user's cookies. He will not get other experiments assigned until the one he's on is active.
+
+**How is the traffic allocated between experiments?**
+By default, the traffic is divided equally between all experiments. If some experiment has to have more or less traffic, it can be specified through the **traffic** parameter. The value of traffic has to be between 0 and 1. 0 is no traffic at all. 1 is 100% of the traffic.
+
+**How to target specific devices/pages/users with an experiment?**
+An experiment will only be assigned to a user if its assignment condition is satisfied. The assignment condition is a function passed to the **ac** property that returns a boolean. So if an experiment is changing the homepage for mobile devices, the AC of the experiment can look like this:
+
+``` js
+function() {
+  return location.href.indexOf('/homepage/') !== -1 &&
+    matchMedia('(max-width: 749px)').matches;
+}
+```
+
+## Usage example
+
 ``` js
 abo([{
   id: '423',
@@ -24,3 +43,9 @@ abo([{
   }
 }]);
 ```
+
+
+License
+========
+
+The MIT License (MIT)
