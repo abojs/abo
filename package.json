@@ -34,7 +34,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "lodash": "^3.9.3",
     "plato": "^1.5.0",
-    "proxyquireify": "^2.1.0",
+    "proxyquireify": "^1.2.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
