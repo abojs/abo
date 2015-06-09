@@ -2,6 +2,16 @@
 
 Abo is a micro front-end A/B testing library.
 
+[![Dependency Status](https://david-dm.org/zkochan/abo/status.svg?style=flat)](https://david-dm.org/zkochan/abo)
+[![Build Status](https://travis-ci.org/zkochan/abo.svg)](https://travis-ci.org/zkochan/abo)
+[![npm version](https://badge.fury.io/js/abo.svg)](http://badge.fury.io/js/abo)
+
+## Installation
+
+```
+npm install --save abo
+```
+
 ## How it works?
 
 The first time a user visits a page he gets an experiment assigned. The experiment's ID is stored in the user's cookies. He will not get other experiments assigned until the one he's on is active.
@@ -45,7 +55,6 @@ abo([{
 ```
 
 
-License
-========
+## License
 
 The MIT License (MIT)
