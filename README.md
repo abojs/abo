@@ -55,6 +55,10 @@ abo([{
 ```
 
 
+## Project generation
+Don't know how to bootstrap your A/B testing project with Abo? No problems, just use [Yeoman generator for Abo](https://github.com/zkochan/generator-abo).
+
+
 ## License
 
 The MIT License (MIT)
