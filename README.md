@@ -6,6 +6,8 @@ Abo is a micro front-end A/B testing library.
 [![Build Status](https://travis-ci.org/zkochan/abo.svg)](https://travis-ci.org/zkochan/abo)
 [![npm version](https://badge.fury.io/js/abo.svg)](http://badge.fury.io/js/abo)
 
+![](https://i.imgur.com/I86ILqQ.jpg)
+
 ## Installation
 
 ```
