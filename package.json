@@ -1,6 +1,6 @@
 {
   "name": "abo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A micro front-end A/B testing framework.",
   "main": "./lib",
   "scripts": {

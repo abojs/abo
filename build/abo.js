@@ -1,23 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-var assignExpt = require('./assign-expt');
-
-function abo(expts) {
-  expts = expts || [];
-
-  var assignedExpt = assignExpt(expts);
-
-  if (assignedExpt && assignedExpt.setup) {
-    assignedExpt.setup();
-  }
-}
-
-module.exports = abo;
-
-},{"./assign-expt":2}],2:[function(require,module,exports){
-'use strict';
-
 var cookie = require('./cookie');
 var selectExpt = require('./select-expt');
 var vkey = 'abo.x';
@@ -68,7 +51,7 @@ function assignExpt(exptArray, location) {
 
 module.exports = assignExpt;
 
-},{"./cookie":4,"./select-expt":5}],3:[function(require,module,exports){
+},{"./cookie":3,"./select-expt":5}],2:[function(require,module,exports){
 'use strict';
 
 /* Source of the domain retriever http://bit.ly/1yvoNw2 */
@@ -88,7 +71,7 @@ function baseDomain() {
 
 module.exports = baseDomain;
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 var baseDomain = require('./base-domain')();
@@ -140,7 +123,24 @@ exports.get = function(key) {
   return null;
 };
 
-},{"./base-domain":3}],5:[function(require,module,exports){
+},{"./base-domain":2}],4:[function(require,module,exports){
+'use strict';
+
+var assignExpt = require('./assign-expt');
+
+function abo(expts) {
+  expts = expts || [];
+
+  var assignedExpt = assignExpt(expts);
+
+  if (assignedExpt && assignedExpt.setup) {
+    assignedExpt.setup();
+  }
+}
+
+module.exports = window.abo = abo;
+
+},{"./assign-expt":1}],5:[function(require,module,exports){
 'use strict';
 
 function selectExpt(expts) {
@@ -194,4 +194,4 @@ function selectExpt(expts) {
 
 module.exports = selectExpt;
 
-},{}]},{},[1]);
+},{}]},{},[4]);
