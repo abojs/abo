@@ -2,8 +2,8 @@
 
 Abo is a micro front-end A/B testing library.
 
-[![Dependency Status](https://david-dm.org/zkochan/abo/status.svg?style=flat)](https://david-dm.org/zkochan/abo)
-[![Build Status](https://travis-ci.org/zkochan/abo.svg)](https://travis-ci.org/zkochan/abo)
+[![Dependency Status](https://david-dm.org/abojs/abo/status.svg?style=flat)](https://david-dm.org/abojs/abo)
+[![Build Status](https://travis-ci.org/abojs/abo.svg)](https://travis-ci.org/abojs/abo)
 [![npm version](https://badge.fury.io/js/abo.svg)](http://badge.fury.io/js/abo)
 
 ![](https://i.imgur.com/I86ILqQ.jpg)
@@ -58,7 +58,7 @@ abo([{
 
 
 ## Project generation
-Don't know how to bootstrap your A/B testing project with Abo? No problems, just use [Yeoman generator for Abo](https://github.com/zkochan/generator-abo).
+Don't know how to bootstrap your A/B testing project with Abo? No problems, just use [Yeoman generator for Abo](https://github.com/abojs/generator-abo).
 
 
 ## License

@@ -8,17 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkochan/abo.git"
+    "url": "git+https://github.com/abojs/abo.git"
   },
   "keywords": [
-    "ab"
+    "ab",
+    "A/B",
+    "front-end A/B testing"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltan.kochan@gmail.com",
+    "url": "http://kochan.io"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zkochan/abo/issues"
+    "url": "https://github.com/abojs/abo/issues"
   },
-  "homepage": "https://github.com/zkochan/abo#readme",
+  "homepage": "https://github.com/abojs/abo#readme",
   "devDependencies": {
     "browserify": "^10.2.1",
     "browserify-istanbul": "^0.2.1",
