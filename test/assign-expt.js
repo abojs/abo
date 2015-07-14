@@ -1,7 +1,7 @@
 'use strict';
 
 var assignExpt = require('../lib/assign-expt');
-var cookie = require('../lib/cookie');
+var cookie = require('easy-cookie');
 var _ = require('lodash');
 var vkey = 'abo.x';
 
